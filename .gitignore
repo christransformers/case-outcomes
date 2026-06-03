@@ -1,0 +1,4 @@
+# HTTrack cache / log files
+hts-cache/
+hts-log.txt
+cookies.txt
