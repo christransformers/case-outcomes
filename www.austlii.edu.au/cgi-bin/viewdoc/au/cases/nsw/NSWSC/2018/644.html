@@ -1,406 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Re Estate of Halvorsen (Deceased); Bennett v Bennett [2018] NSWSC 644 (28 September 2018)</title>
-<style>
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-body {
-  background-color: #FFFFFF;
-  font-family: Times New Roman, Georgia, serif;
-  color: #1a1a1a;
-  line-height: 1.5;
-}
-
-/* Top bar with logo */
-.top-bar {
-  background: #FFFFFF;
-  padding: 16px 40px 0 40px;
-  position: relative;
-}
-
-.top-bar .logo-link {
-  display: inline-block;
-  position: absolute;
-  top: 16px;
-  left: 40px;
-}
-
-.top-bar .logo-link img {
-  height: 40px;
-  width: auto;
-}
-
-/* Centered red header */
-.centered-header {{
-  background-color: #CC0000;
-  text-align: center;
-  padding: 14px 40px;
-  margin-bottom: 0;
-}}
-
-.centered-header .court-line {{
-  font-size: 22px;
-  font-weight: bold;
-  color: #ffffff;
-  font-family: Times New Roman, Georgia, serif;
-  line-height: 1.3;
-}}
-
-.centered-header .case-line {{
-  font-size: 16px;
-  font-weight: bold;
-  color: #ffffff;
-  font-family: Times New Roman, Georgia, serif;
-  margin-top: 4px;
-  line-height: 1.3;
-}}
-
-/* Main container below header */
-.main-container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px 50px 40px 50px;
-}
-
-/* Meta line */
-.last-updated {
-  font-size: 13px;
-  color: #555;
-  margin-bottom: 16px;
-}
-
-/* Citation block */
-.citation-block {
-  font-family: Courier New, monospace;
-  font-size: 14px;
-  color: #2c3e66;
-  background-color: #f9fafb;
-  padding: 12px 15px;
-  border-left: 4px solid #2c3e66;
-  margin: 20px 0;
-}
-
-/* Meta data grid */
-.meta-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  border-bottom: 1px solid #eaeaea;
-  padding-bottom: 20px;
-  margin-bottom: 25px;
-  font-size: 14px;
-}
-
-.meta-item {
-  color: #555;
-  min-width: 180px;
-}
-
-.meta-item .label {
-  font-weight: 600;
-  color: #000;
-}
-
-/* Judgment */
-.section-heading {
-  font-size: 18px;
-  font-weight: bold;
-  color: #111;
-  margin-top: 25px;
-  margin-bottom: 10px;
-  border-bottom: 1px dotted #ccc;
-  padding-bottom: 4px;
-}
-
-.judgment-para {
-  font-size: 16px;
-  margin-bottom: 16px;
-  text-align: justify;
-}
-
-.para-num {
-  font-weight: bold;
-  color: #2c3e66;
-}
-
-.catchwords-box {
-  background-color: #f8f9fc;
-  border-left: 4px solid #2c3e66;
-  padding: 12px 20px;
-  margin: 25px 0;
-  font-size: 14px;
-  font-style: italic;
-}
-
-.legislation-cited {
-  background-color: #fef7e0;
-  padding: 10px 15px;
-  font-family: monospace;
-}
-
-.footer-meta {
-  margin-top: 40px;
-  padding-top: 20px;
-  border-top: 1px solid #eee;
-  font-size: 12px;
-  color: #777;
-  text-align: center;
-}
-
-/* ===== TABLET (768px - 1023px) ===== */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .top-bar { padding: 14px 30px 0 30px; }
-  .top-bar .logo-link { left: 30px; }
-  .centered-header { padding: 8px 30px 0 30px; }
-  .centered-header .court-line { font-size: 20px; }
-  .centered-header .case-line { font-size: 15px; }
-  .main-container { padding: 16px 30px 30px 30px; }
-}
-
-/* ===== MOBILE (< 768px) ===== */
-@media (max-width: 767px) {
-  body { font-family: Roboto, system-ui, -apple-system, serif; }
-
-  .top-bar {
-    padding: 12px 16px 0 16px;
-    text-align: center;
-  }
-
-  .top-bar .logo-link {
-    position: static;
-    display: block;
-    margin-bottom: 8px;
-  }
-
-  .top-bar .logo-link img {
-    height: 32px;
-  }
-
-  .centered-header {{
-    padding: 12px 16px;
-    margin-bottom: 0;
-  }}
-
-  .centered-header .court-line {{
-    font-size: 18px;
-    color: #ffffff;
-  }}
-
-  .centered-header .case-line {{
-    font-size: 14px;
-    color: #ffffff;
-  }}
-
-  .main-container {
-    padding: 16px 16px 32px 16px;
-  }
-
-  .meta-grid {
-    flex-direction: column;
-    gap: 12px;
-    border-bottom: 1px solid #ececec;
-    padding-bottom: 16px;
-    margin-bottom: 20px;
-    font-size: 13px;
-  }
-
-  .meta-item .label {
-    display: inline-block;
-    min-width: 100px;
-  }
-
-  .section-heading {
-    font-size: 17px;
-    margin-top: 20px;
-    margin-bottom: 8px;
-    border-bottom: 0.5px solid #d4d4d4;
-  }
-
-  .judgment-para {
-    font-size: 15px;
-    margin-bottom: 14px;
-    text-align: left;
-    line-height: 1.5;
-  }
-
-  .catchwords-box {
-    background-color: #f3f5f9;
-    border-left: 3px solid #2c3e66;
-    padding: 10px 14px;
-    margin: 18px 0;
-    font-size: 13px;
-  }
-
-  .legislation-cited {
-    font-size: 12px;
-    padding: 8px 12px;
-  }
-
-  .footer-meta {
-    margin-top: 32px;
-    padding-top: 16px;
-    border-top: 1px solid #eaeaea;
-    font-size: 10px;
-    color: #888;
-  }
-
-  a, button, [role="button"] {
-    min-height: 44px;
-    min-width: 44px;
-  }
-
-  html { -webkit-text-size-adjust: 100%; }
-  body { padding-bottom: 20px; }
-}
-
-@media print {
-  body { background: #fff; padding: 0; }
-  .main-container { max-width: 100%; padding: 20px; }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re Estate of Halvorsen (Deceased); Bennett v Bennett [2018] NSWSC 644</title>
 </head>
-<body>
+<body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #f4f4f4;">
 
-<div class="top-bar">
-  <a class="logo-link" href="https://www.austlii.edu.au/" target="_blank" rel="noopener">
-    <img src="https://www.austlii.edu.au/images/logo.svg" alt="AustLII">
-  </a>
-</div>
+    <div style="max-width: 600px; margin: 0 auto; background-color: #ffffff; min-height: 100vh; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+        
+        <!-- Faux Mobile Browser Header -->
+        <div style="background-color: #d92323; display: flex; align-items: center; justify-content: space-between; padding: 10px 15px; color: white;">
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <span style="font-size: 20px;">⌂</span>
+                <div style="background-color: rgba(255,255,255,0.2); padding: 5px 15px; border-radius: 20px; display: flex; align-items: center; font-size: 14px;">
+                    <span style="margin-right: 5px;">o-</span> austlii.edu.au/cgi...
+                </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 15px; font-size: 18px;">
+                <span>+</span>
+                <span style="border: 1px solid white; border-radius: 4px; padding: 2px 5px; font-size: 12px; font-weight: bold;">55</span>
+                <span>⋮</span>
+            </div>
+        </div>
 
-<div class="centered-header">
-  <div class="court-line">Supreme Court of New South Wales</div>
-  <div class="case-line">Re Estate of Halvorsen (Deceased); Bennett v Bennett [2018] NSWSC 644 (28 September 2018)</div>
-</div>
+        <!-- Top Header & Logo Area -->
+        <div style="padding: 15px;">
+            <div style="text-align: right; font-size: 8px; color: #666; margin-bottom: 5px;">
+                <span style="margin-right: 5px;">About</span>
+                <span style="margin-right: 5px;">Contact</span>
+                <span>Copyright &</span>
+            </div>
+            
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <img src="https://www.austlii.edu.au/images/logo.svg" alt="AustLII Logo" style="height: 40px; width: auto;">
+                    <h1 style="font-size: 14px; font-weight: bold; margin: 0; color: #333;">Supreme Court of New South Wales</h1>
+                </div>
+                <div style="display: flex; border: 1px solid #ccc; background-color: #f9f9f9;">
+                    <div style="padding: 5px; border-right: 1px solid #ccc; font-size: 10px; color: #666;">▼</div>
+                    <div style="padding: 5px 10px; font-size: 10px; color: #999;">Search this database only</div>
+                </div>
+            </div>
+        </div>
 
-<div class="main-container">
+        <!-- Red Navigation Ribbon -->
+        <div style="background-color: #ea2e2e; color: white; display: flex; font-size: 9px; text-transform: uppercase;">
+            <div style="flex: 1; padding: 8px 5px; border-right: 1px solid rgba(255,255,255,0.2);">
+                <div style="font-weight: bold; margin-bottom: 2px;">Type</div>
+                <div style="color: rgba(255,255,255,0.8);">Cases</div>
+            </div>
+            <div style="flex: 2; padding: 8px 5px; border-right: 1px solid rgba(255,255,255,0.2);">
+                <div style="font-weight: bold; margin-bottom: 2px;">Jurisdiction</div>
+                <div style="color: rgba(255,255,255,0.8);">New South Wales</div>
+            </div>
+            <div style="flex: 2; padding: 8px 5px; border-right: 1px solid rgba(255,255,255,0.2);">
+                <div style="font-weight: bold; margin-bottom: 2px;">Database</div>
+                <div style="color: rgba(255,255,255,0.8);">Supreme Court of New South W...</div>
+            </div>
+            <div style="flex: 1; padding: 8px 5px; border-right: 1px solid rgba(255,255,255,0.2);">
+                <div style="font-weight: bold; margin-bottom: 2px;">Year</div>
+                <div style="color: rgba(255,255,255,0.8);">2018</div>
+            </div>
+            <div style="flex: 1; padding: 8px 5px;">
+                <div style="font-weight: bold; margin-bottom: 2px;">Citation</div>
+                <div style="color: rgba(255,255,255,0.8);">[2018] NSWSC 644</div>
+            </div>
+        </div>
 
-  <p class="last-updated">Last Updated: 28 September 2018</p>
+        <!-- Main Content Area -->
+        <div style="padding: 20px;">
+            <h2 style="font-size: 18px; margin: 0 0 15px 0; color: #333; line-height: 1.3;">Re Estate of Halvorsen (Deceased); Bennett v Bennett [2018] NSWSC 644 (28 September 2018)</h2>
+            <p style="font-size: 12px; color: #555; margin-bottom: 40px;">Last Updated: 28 September 2018</p>
 
-  <div class="meta-grid">
-    <div class="meta-item"><span class="label">Before:</span> Whitmore J</div>
-    <div class="meta-item"><span class="label">Hearing:</span> 12&ndash;15 June 2018</div>
-    <div class="meta-item"><span class="label">Judgment:</span> 28 September 2018</div>
-    <div class="meta-item"><span class="label">Jurisdiction:</span> Equity &mdash; Probate</div>
-    <div class="meta-item"><span class="label">Parties:</span> Christopher Bennett (applicant) v Lucas Bennett &amp; Claire Bennett (respondents)</div>
-    <div class="meta-item"><span class="label">File No:</span> 2017/00042361</div>
-  </div>
+            <div style="text-align: center; font-size: 13px; color: #333; margin-bottom: 30px; line-height: 1.5;">
+                Supreme Court<br>
+                New South Wales
+            </div>
 
-  <div class="catchwords-box">
-    <strong>Catchwords:</strong> SUCCESSION &mdash; Probate and administration &mdash; Removal of executors &mdash; Forgery of codicil &mdash; Breach of fiduciary duty &mdash; Misappropriation of estate funds &mdash; Failure to account &mdash; Co-executor passivity and failure to exercise independent diligence &mdash; Revocation of grant &mdash; Appointment of independent administrator de bonis non
-  </div>
+            <!-- Meta Data Grid -->
+            <div style="display: grid; grid-template-columns: 140px 1fr; gap: 15px 10px; font-size: 12px; color: #333; line-height: 1.4; margin-bottom: 40px;">
+                
+                <div style="color: #666;">Case Name:</div>
+                <div>Re Estate of Halvorsen (Deceased); Bennett v Bennett</div>
 
-  <div class="legislation-cited">
-    <strong>Legislation Cited:</strong> Succession Act 2006 (NSW) &bull; Probate and Administration Act 1898 (NSW)<br>
-    <strong>Cases Cited:</strong> Briginshaw v Briginshaw (1938) 60 CLR 336
-  </div>
+                <div style="color: #666;">Medium Neutral Citation:</div>
+                <div><a href="#" style="color: #0066cc; text-decoration: underline;">[2018] NSWSC 644</a></div>
 
-<h2 class="section-heading">INTRODUCTION</h2>
-<p class="judgment-para"><span class="para-num">1.</span> This is an application concerning the administration of the estate of the late Mr David Halvorsen ("the Deceased"), who died on 4 March 2016 at the age of seventy-three years. The proceedings arise in the context of serious allegations concerning the conduct of the executors, namely Mr Lucas Bennett and Ms Claire Bennett, who are brother and sister respectively and are the adult children of the Deceased from his first marriage.</p>
-<p class="judgment-para"><span class="para-num">2.</span> The applicant, Mr Christopher Bennett, is also a child of the Deceased and a beneficiary under the will dated 17 August 2014. He commenced these proceedings by summons filed on 15 February 2017, seeking removal of both executors, revocation of the grant of probate made on 22 June 2016, and consequential orders for the appointment of an independent administrator to complete the administration of the estate.</p>
-<p class="judgment-para"><span class="para-num">3.</span> The proceedings were heard over four days between 12 and 15 June 2018. The applicant was represented by Mr D. Hartley of counsel. The first respondent, Lucas Bennett, appeared in person. The second respondent, Claire Bennett, was represented by Ms R. Templeton of counsel. The Court received affidavit evidence from seven witnesses and oral testimony from four witnesses, including cross-examination of both respondents.</p>
-<p class="judgment-para"><span class="para-num">4.</span> The central issue is whether the executors have so misconducted themselves as to warrant the intervention of the Court in equity to protect the proper administration of the estate. Ancillary questions arise concerning the validity of certain instruments purportedly executed by the Deceased, the conduct of the executors in relation to estate assets, and the appropriate form of relief should misconduct be established.</p>
-<p class="judgment-para"><span class="para-num">5.</span> The Court acknowledges the regrettable nature of these proceedings, which have pitted sibling against sibling and have substantially depleted the estate through legal costs. Nevertheless, the issues raised are serious and go to the integrity of the testamentary process and the proper administration of deceased estates in this State.</p>
-<h2 class="section-heading">FACTS</h2>
-<p class="judgment-para"><span class="para-num">6.</span> The Deceased, David Halvorsen, was born on 12 November 1942. He was a retired civil engineer who had accumulated significant assets over his working life, including a family home in Killara valued at approximately $2.8 million, an investment property in Port Macquarie valued at approximately $980,000, shareholdings in publicly listed companies valued at approximately $640,000, and cash deposits totaling approximately $420,000 held across three financial institutions.</p>
-<p class="judgment-para"><span class="para-num">7.</span> The Deceased was married twice. His first marriage, to Margaret Halvorsen (née Thompson), produced three children: Lucas Bennett (born 1968), Claire Bennett (born 1970), and the applicant, Christopher Bennett (born 1973). That marriage ended in divorce in 1985. The Deceased married his second wife, Helen Halvorsen (née Park), in 1988. There were no children of that marriage. Helen Halvorsen predeceased the Deceased, having died on 19 November 2013.</p>
-<p class="judgment-para"><span class="para-num">8.</span> Following the death of Helen Halvorsen, the Deceased lived alone in the Killara property. The evidence indicates that his relationship with his three children varied considerably. He maintained regular contact with Christopher Bennett, who visited him approximately once per fortnight. His contact with Claire Bennett was less frequent, typically limited to family occasions. His relationship with Lucas Bennett had been estranged for a period of approximately six years between 2007 and 2013, after which some contact resumed, though it was described in evidence as "strained and intermittent."</p>
-<p class="judgment-para"><span class="para-num">9.</span> The Deceased executed a formal will on 17 August 2014, prepared by his long-standing solicitor, Mr Raymond Foster of Foster &amp; Associates, Hornsby. The will appointed Lucas Bennett and Claire Bennett as joint executors and trustees. It divided the residuary estate equally between the three children of the Deceased, subject to certain specific legacies of personal effects.</p>
-<p class="judgment-para"><span class="para-num">10.</span> The will was executed in the presence of Mr Foster and his legal secretary, Ms Janet Wilmott, both of whom provided affidavit evidence confirming the Deceased's apparent testamentary capacity at the time of execution. Mr Foster deposed that he had taken detailed instructions from the Deceased over two conferences and was satisfied that the Deceased understood the nature and extent of his assets and the claims upon his bounty.</p>
-<p class="judgment-para"><span class="para-num">11.</span> A document purporting to be a codicil to the will, dated 3 January 2015 ("the Codicil"), was produced by Lucas Bennett following the Deceased's death. The Codicil purported to vary the distribution of the residuary estate by reducing the share allocated to Christopher Bennett to twenty percent and increasing the shares allocated to Lucas Bennett and Claire Bennett to forty percent each. The Codicil also purported to acknowledge a debt of $100,000 owed by the estate to Lucas Bennett for "care and assistance provided during 2013–2014."</p>
-<p class="judgment-para"><span class="para-num">12.</span> The Codicil was not prepared by Mr Foster. It was typewritten on plain paper and bore what purported to be the signature of the Deceased, witnessed by a neighbour, Mr Gregory Talbot. Mr Talbot gave evidence at the hearing and was cross-examined extensively, as discussed below.</p>
-<p class="judgment-para"><span class="para-num">13.</span> The Deceased died on 4 March 2016. The cause of death was recorded as myocardial infarction. He was found at his home by Christopher Bennett, who had attended for their regular fortnightly visit.</p>
-<p class="judgment-para"><span class="para-num">14.</span> Following the funeral, Lucas Bennett informed his siblings of the existence of the will and the Codicil. He produced the original of the will and the Codicil at a meeting held at the Killara property on 21 March 2016. This meeting was attended by all three siblings and was described in evidence as "tense and confrontational."</p>
-<p class="judgment-para"><span class="para-num">15.</span> Christopher Bennett expressed immediate concerns about the authenticity of the Codicil, noting that he had visited the Deceased regularly during the relevant period and had no knowledge of any claimed debt to Lucas Bennett. He also observed that the Deceased's signature on the Codicil appeared, in his view, "significantly different" from the signature on the will.</p>
-<p class="judgment-para"><span class="para-num">16.</span> Despite these concerns, Lucas Bennett and Claire Bennett proceeded to apply for probate. Probate was granted in common form by the Registrar on 22 June 2016. Christopher Bennett did not lodge a caveat at that time, evidence having been given that he was uncertain of his legal rights and was attempting to resolve the matter amicably within the family.</p>
-<p class="judgment-para"><span class="para-num">17.</span> Following the grant of probate, the executors assumed control of the estate assets. They took possession of the Killara property, arranged for the transfer of the Port Macquarie investment property into their names as executors, consolidated the Deceased's bank accounts into a single estate account operated by Lucas Bennett, and liquidated a portion of the share portfolio.</p>
-<p class="judgment-para"><span class="para-num">18.</span> Between July 2016 and January 2017, Lucas Bennett caused the transfer of $85,000 from the estate account to his personal account. The stated purpose of these transfers was "reimbursement of expenses incurred in estate administration" and "partial satisfaction of the debt owed to me by the estate."</p>
-<p class="judgment-para"><span class="para-num">19.</span> Claire Bennett gave evidence that she was aware of some of these transfers but accepted Lucas Bennett's explanations without seeking independent verification. She deposed that she "trusted her brother to act properly" and "did not wish to create conflict within the family." She acknowledged, however, that she did not review bank statements, obtain independent legal advice on the validity of the claimed debt, or seek an accounting from Lucas Bennett in relation to estate expenditure.</p>
-<p class="judgment-para"><span class="para-num">20.</span> The executors failed to provide estate accounts to the beneficiaries in a timely manner. Despite repeated requests from Christopher Bennett made through his solicitors in August 2016, October 2016, and December 2016, no substantive response was received. Partial accounts were eventually provided on 3 February 2017, some eight months after the grant of probate, and were described by the applicant's forensic accountant, Mr Thomas Eversley, as "incomplete, inconsistent, and lacking in supporting documentation."</p>
-<p class="judgment-para"><span class="para-num">21.</span> Communication between the executors and Christopher Bennett deteriorated progressively. The applicant's solicitors sent twelve letters to the executors between July 2016 and January 2017 seeking information about the administration of the estate. The executors' responses, when provided at all, were described as "evasive and unhelpful."</p>
-<p class="judgment-para"><span class="para-num">22.</span> Significantly, the applicant's solicitors obtained, by subpoena issued to Lucas Bennett's mobile telephone service provider, a series of text messages exchanged between Lucas Bennett and Claire Bennett in the period August 2016 to November 2016. These messages were tendered in evidence and are of considerable probative value.</p>
-<p class="judgment-para"><span class="para-num">23.</span> In a message dated 14 August 2016, Lucas Bennett wrote to Claire Bennett: "Chris keeps asking about accounts. I'm not giving him anything until he drops this nonsense about the codicil."</p>
-<p class="judgment-para"><span class="para-num">24.</span> In a message dated 3 September 2016, Lucas Bennett wrote: "I'm going to delay distribution until payment of $100,000 is made to me personally. The estate can wait. Chris can wait. I'm the executor, I decide."</p>
-<p class="judgment-para"><span class="para-num">25.</span> In a message dated 22 October 2016, Claire Bennett responded to a query from Lucas Bennett about Christopher's complaints by stating: "I don't know, just do what you think is best. I don't want to be involved in the arguments." Claire Bennett gave evidence that she regretted this response but maintained that she did not, at the time, understand the legal implications of her brother's conduct.</p>
-<p class="judgment-para"><span class="para-num">26.</span> The Court has carefully considered these messages. They are plainly admissible and constitute admissions against interest. The Court finds that they demonstrate a conscious decision by Lucas Bennett to use his position as executor to exert personal leverage over a beneficiary, and a failure by Claire Bennett to discharge her independent duty of proper inquiry as a co-executor.</p>
-<p class="judgment-para"><span class="para-num">27.</span> The applicant engaged Dr Susan Hartigan, a forensic document examiner of twenty-three years' standing, to examine the signature on the Codicil. Dr Hartigan holds a Bachelor of Science with Honours in forensic science, a Master of Forensic Studies in document examination, and is accredited by the Australian and New Zealand Forensic Science Society. She has given expert evidence in this Court on seventeen previous occasions.</p>
-<p class="judgment-para"><span class="para-num">28.</span> Dr Hartigan conducted a comparative analysis of the signature on the Codicil against twelve known specimens of the Deceased's signature obtained from independent sources, including bank records, passport applications, the original will, and correspondence held by Mr Foster's office. Her analysis employed stereomicroscopy, electrostatic detection apparatus, and video spectral comparison.</p>
-<p class="judgment-para"><span class="para-num">29.</span> Dr Hartigan concluded, and the Court accepts, that the signature on the Codicil displays multiple characteristics inconsistent with the known specimens. Specifically, the letter formation in the surname "Halvorsen" shows an unusual termination stroke not present in any of the twelve known specimens, the pen pressure pattern measured by electrostatic detection is inconsistent with the established pattern of the Deceased, and the baseline alignment differs markedly from the consistent baseline maintained by the Deceased across the known specimens.</p>
-<p class="judgment-para"><span class="para-num">30.</span> Dr Hartigan expressed her conclusion in the following terms: "On the balance of probabilities, and to a high degree of certainty, the questioned signature on the document dated 3 January 2015 was not written by David Halvorsen." The respondents did not call any expert evidence to contradict this conclusion. Mr Gregory Talbot, the purported witness, gave evidence that was, in the Court's assessment, unsatisfactory and internally inconsistent, as discussed further below.</p>
-<p class="judgment-para"><span class="para-num">31.</span> The debt of $100,000 claimed by Lucas Bennett was said to arise from "care and assistance provided during 2013–2014," a period during which the Deceased was recovering from hip replacement surgery. However, no documentation of this debt existed. There was no loan agreement, no acknowledgment in the Deceased's financial records, no mention in correspondence with Mr Foster, and no reference in any medical or care records.</p>
-<p class="judgment-para"><span class="para-num">32.</span> The medical evidence, tendered by the applicant and not challenged by the respondents, established that the Deceased's hip replacement surgery was performed on 18 March 2013, that he was discharged to a rehabilitation facility where he remained for three weeks, and that he received in-home care arranged through an accredited provider, CareFirst Community Services, for a period of eight weeks following discharge. The records of CareFirst, tendered in evidence, make no reference to any additional care provided by Lucas Bennett.</p>
-<p class="judgment-para"><span class="para-num">33.</span> Christopher Bennett gave evidence, which the Court accepts, that he himself provided significant assistance to the Deceased during the recovery period, including transportation to medical appointments, meal preparation, and assistance with household tasks. He stated that during this period he saw Lucas Bennett at the Deceased's home on only two occasions, once for approximately thirty minutes on 26 March 2013 and once for approximately one hour on 14 April 2013.</p>
-<p class="judgment-para"><span class="para-num">34.</span> Lucas Bennett was unable to produce any contemporaneous records supporting the claimed assistance, any diary entries, any correspondence with the Deceased relating to the alleged debt, or any witness who could corroborate the provision of care. His evidence on this point was vague and, in parts, contradictory. When cross-examined, he stated that the arrangement had been "informal" and that the Deceased had "promised to look after him in the will," but was unable to explain why the debt was not then reflected in the will prepared by Mr Foster or in any other document.</p>
-<p class="judgment-para"><span class="para-num">35.</span> Mr Gregory Talbot, who purported to have witnessed the Deceased's signature on the Codicil, gave evidence that was, in the Court's assessment, evasive and marked by significant inconsistencies. He gave inconsistent accounts in cross-examination of the circumstances in which he allegedly witnessed the signing, changing his description of the date, time, and location on multiple occasions.</p>
-<p class="judgment-para"><span class="para-num">36.</span> Most significantly, Mr Talbot initially stated that he had witnessed the Deceased sign the Codicil at the Deceased's home on "the morning of 3 January 2015." However, records tendered by the applicant established that Mr Talbot was, at that time, in Queensland attending a family wedding, having departed Sydney on 28 December 2014 and returned on 7 January 2015. When confronted with this evidence, Mr Talbot altered his account to claim that he had witnessed the signing "around that time, it might have been earlier in December," an account the Court finds to be inherently unreliable.</p>
-<p class="judgment-para"><span class="para-num">37.</span> The Court finds that Mr Talbot is not a credible witness. His evidence does not support the authenticity of the Codicil. To the contrary, the weight of the evidence, taken as a whole, compels the conclusion that the Codicil is a fabrication.</p>
-<h2 class="section-heading">ISSUES FOR DETERMINATION</h2>
-<p class="judgment-para"><span class="para-num">38.</span> Whether the Codicil dated 3 January 2015 is a valid testamentary instrument of the Deceased.</p>
-<p class="judgment-para"><span class="para-num">39.</span> Whether the executors, or either of them, have breached fiduciary duties owed to the estate and the beneficiaries.</p>
-<p class="judgment-para"><span class="para-num">40.</span> Whether the conduct of Lucas Bennett constitutes serious misconduct or demonstrates such a conflict of interest as to justify his removal as executor.</p>
-<p class="judgment-para"><span class="para-num">41.</span> Whether the conduct of Claire Bennett, whether by participation or omission, warrants similar relief.</p>
-<p class="judgment-para"><span class="para-num">42.</span> Whether the grant of probate made on 22 June 2016 should be revoked.</p>
-<p class="judgment-para"><span class="para-num">43.</span> Whether, and in what form, relief should be granted in relation to the costs of these proceedings.</p>
-<p class="judgment-para"><span class="para-num">44.</span> What orders are necessary to ensure the due and proper administration of the estate.</p>
-<h2 class="section-heading">APPLICABLE LEGAL PRINCIPLES</h2>
-<p class="judgment-para"><span class="para-num">45.</span> The jurisdiction of this Court to remove an executor and to revoke a grant of probate is well established. The guiding principle is the due and proper administration of the estate and the interests of the parties beneficially entitled to the estate. The Court's power is protective, not punitive. The question is whether the estate is being properly administered, and whether the executor is a fit and proper person to continue in that office.</p>
-<p class="judgment-para"><span class="para-num">46.</span> An executor stands in a fiduciary position in relation to the estate and the beneficiaries. The executor is required to act with reasonable diligence, to avoid conflicts of interest, to account for dealings with estate property, and to distribute the estate in accordance with the terms of the will and the law. A breach of these obligations, particularly where it involves dishonesty, self-dealing, or a failure to account, may provide grounds for removal.</p>
-<p class="judgment-para"><span class="para-num">47.</span> The Court may revoke a grant of probate where the grant was obtained by fraud, where the will propounded is subsequently found to be invalid, or where the executor has subsequently become unfit to act. The jurisdiction is exercised with caution, but is not to be constrained where the due administration of the estate requires intervention.</p>
-<p class="judgment-para"><span class="para-num">48.</span> Where co-executors are appointed and one engages in misconduct, the question is whether the other executor has demonstrated sufficient independence and diligence to continue to act. A co-executor who is aware of, or ought reasonably to be aware of, misconduct by a fellow executor and takes no steps to investigate or address it may also be liable to removal.</p>
-<p class="judgment-para"><span class="para-num">49.</span> The onus of proof in these proceedings rests on the applicant. The standard of proof is the balance of probabilities, applied in accordance with the principles articulated in Briginshaw v Briginshaw (1938) 60 CLR 336, having regard to the seriousness of the allegations made.</p>
-<p class="judgment-para"><span class="para-num">50.</span> As to testamentary instruments, the Court must be satisfied that the document propounded represents the true will of the Deceased, executed in accordance with the formal requirements of the Succession Act 2006 (NSW), and free from undue influence, fraud, or forgery. Where the authenticity of a testamentary instrument is challenged, the propounder bears the onus of establishing its validity.</p>
-<h2 class="section-heading">REASONING</h2>
-<p class="judgment-para"><span class="para-num">51.</span> The Court turns first to the question of the validity of the Codicil, as this issue is foundational to the remaining questions in dispute. The Codicil was propounded by Lucas Bennett and was relied upon by both respondents as the basis for the distribution they sought to implement and as the foundation for Lucas Bennett's claim to a debt of $100,000 owed by the estate.</p>
-<p class="judgment-para"><span class="para-num">52.</span> The Court has carefully considered the expert evidence of Dr Susan Hartigan. Her qualifications are impressive and were not challenged. Her methodology was transparently explained and is consistent with accepted forensic practice. Her conclusion that the signature on the Codicil was not written by the Deceased was expressed with appropriate caution and is supported by a detailed comparative analysis. The respondents did not adduce any expert evidence to contradict her findings. The Court accepts Dr Hartigan's evidence in its entirety.</p>
-<p class="judgment-para"><span class="para-num">53.</span> The Court has also considered the evidence of Mr Gregory Talbot, the purported attesting witness. His evidence was, as the Court has observed, wholly unsatisfactory. The inconsistencies in his account, combined with the uncontested evidence that he was interstate on the date the Codicil purports to have been executed, lead the Court to conclude that Mr Talbot's evidence is incapable of belief.</p>
-<p class="judgment-para"><span class="para-num">54.</span> The Court finds, on the balance of probabilities and to a high degree of satisfaction, that the Codicil dated 3 January 2015 is not a valid testamentary instrument of the Deceased. The signature on the Codicil is a forgery. The Codicil is a fabrication and is of no legal effect. The Court rejects it in its entirety.</p>
-<p class="judgment-para"><span class="para-num">55.</span> This finding is significant not only for the substantive administration of the estate, which must proceed on the basis of the will dated 17 August 2014, but also for the assessment of the conduct of Lucas Bennett, who propounded the Codicil and sought to rely upon it for personal advantage. The Court will return to this matter in considering the question of his fitness to remain as executor.</p>
-<p class="judgment-para"><span class="para-num">56.</span> The evidence establishes, to the Court's satisfaction, a pattern of conduct by Lucas Bennett that is fundamentally incompatible with the obligations of an executor and fiduciary. The Court identifies the following matters as particularly significant.</p>
-<p class="judgment-para"><span class="para-num">57.</span> First, Lucas Bennett propounded a forged codicil that purported to both increase his share of the residuary estate and to create a debt of $100,000 in his favour. Whether Lucas Bennett was himself the author of the forgery, or merely adopted a document he knew or ought to have known was not authentic, is a question the Court need not determine for present purposes. It is sufficient to observe that the forgery existed, that Lucas Bennett propounded it, and that he sought to gain personal advantage from it. This conduct alone is sufficient to demonstrate his unfitness to act as executor.</p>
-<p class="judgment-para"><span class="para-num">58.</span> Second, Lucas Bennett asserted a debt of $100,000 against the estate for which there was no documentary support. The absence of documentation is remarkable given the size of the claimed debt and the fact that the Deceased had engaged a solicitor to prepare his will and had ample opportunity to document the debt had he intended to acknowledge it. The medical and care records tendered in evidence do not support the claim. The Court finds that the claimed debt was not genuinely owed by the estate.</p>
-<p class="judgment-para"><span class="para-num">59.</span> Third, Lucas Bennett caused the transfer of $85,000 from the estate account to his personal account without proper authorisation or justification. These transfers were not approved by the co-executor acting independently, were not disclosed to the beneficiaries in a timely manner, and were not supported by adequate documentation. They represent an improper dealing with estate property and a breach of fiduciary duty.</p>
-<p class="judgment-para"><span class="para-num">60.</span> Fourth, the text messages tendered in evidence are, in the Court's assessment, damning. They reveal a deliberate intention to use control of the estate as a means of exerting pressure on a beneficiary. The statement that Lucas Bennett would "delay distribution until payment of $100,000 is made to me personally" is a plain statement of intention to misuse the powers of an executor for personal advantage. The statement that "Chris can wait. I'm the executor, I decide" reflects a fundamental misunderstanding of the executor's role, which is not one of arbitrary power but of fiduciary obligation.</p>
-<p class="judgment-para"><span class="para-num">61.</span> Fifth, Lucas Bennett failed to provide timely and transparent accounts of the administration of the estate. Beneficiaries are entitled to be informed of the progress of administration and to have access to proper accounts. The persistent failure to respond to reasonable requests for information is itself a breach of duty.</p>
-<p class="judgment-para"><span class="para-num">62.</span> The Court finds that Lucas Bennett has engaged in serious misconduct in the administration of the estate. He has breached fiduciary duties owed to the estate and the beneficiaries. He has demonstrated a propensity to place his personal interests above those of the estate and the other beneficiaries. He is not a fit and proper person to continue as executor.</p>
-<p class="judgment-para"><span class="para-num">63.</span> The position of Claire Bennett requires separate consideration. The evidence does not establish that Claire Bennett was complicit in the forgery of the Codicil or that she was aware of the forgery at the time she assumed the role of executor. However, the matter does not end there.</p>
-<p class="judgment-para"><span class="para-num">64.</span> Claire Bennett was a co-executor and, as such, bore an independent duty to act in the best interests of the estate and to exercise reasonable diligence in the discharge of her office. The evidence establishes that she failed to do so in several material respects.</p>
-<p class="judgment-para"><span class="para-num">65.</span> She was aware of the disputed Codicil and of her brother Christopher's concerns regarding its authenticity. She was in a position, as co-executor, to inquire into the circumstances of the Codicil, to seek independent legal advice, and to ensure that the estate was not administered on the basis of an instrument of doubtful authenticity. She took none of these steps. She chose, instead, to defer to her brother Lucas and to avoid involvement in the dispute.</p>
-<p class="judgment-para"><span class="para-num">66.</span> She was aware of, or ought reasonably to have been aware of, the transfers of estate funds to Lucas Bennett's personal account. She did not seek an independent accounting or verification of these transfers. She did not, on her own evidence, review bank statements or other financial records. She simply trusted her brother.</p>
-<p class="judgment-para"><span class="para-num">67.</span> The text messages tendered in evidence, while far less damaging to Claire Bennett than to Lucas Bennett, reveal a troubling passivity. Her response to Lucas's statement of intention to delay distribution — "I don't know, just do what you think is best" — amounts to an abdication of her responsibilities as co-executor.</p>
-<p class="judgment-para"><span class="para-num">68.</span> The Court finds that Claire Bennett has failed to discharge her duties as executor with the diligence required by law. While her conduct does not rise to the level of dishonesty or active misconduct, her persistent passivity and failure to exercise independent judgment have contributed materially to the breakdown in the proper administration of the estate. The Court finds that she is not a suitable person to continue as sole executor, and that the due administration of the estate requires the removal of both executors.</p>
-<p class="judgment-para"><span class="para-num">69.</span> The evidence demonstrates, and the Court finds, that the relationship of trust and confidence between the executors and the applicant beneficiary has broken down irretrievably. The circumstances giving rise to this breakdown are primarily, though not exclusively, attributable to the conduct of Lucas Bennett. However, the involvement of Claire Bennett in the failed administration, even if by omission rather than commission, means that she cannot command the confidence of the beneficiaries necessary for the proper completion of the administration.</p>
-<p class="judgment-para"><span class="para-num">70.</span> The Court is mindful that removal of an executor is a serious step, not to be undertaken lightly. However, where, as here, the executors have demonstrated an inability or unwillingness to discharge their duties in accordance with law, and where the estate is at risk of further loss or delay, the Court must intervene. The due and proper administration of the estate requires that both executors be removed and that an independent administrator be appointed.</p>
-<p class="judgment-para"><span class="para-num">71.</span> The grant of probate was made on the basis of the will dated 17 August 2014 and the Codicil dated 3 January 2015. The Court has found that the Codicil is a forgery. The grant was therefore obtained, at least in part, by the propounding of an invalid instrument. In these circumstances, and having regard also to the subsequent misconduct of the executors, the Court is satisfied that the grant of probate should be revoked.</p>
-<p class="judgment-para"><span class="para-num">72.</span> The Court will order that letters of administration de bonis non be granted to an independent professional administrator, to be appointed by the Registrar, to administer the estate in accordance with the will dated 17 August 2014 on the basis that the Codicil is a nullity. The administrator will be directed to complete the administration of the estate with expedition and to provide regular accounts to the beneficiaries.</p>
-<h2 class="section-heading">CONCLUSION</h2>
-<p class="judgment-para"><span class="para-num">73.</span> The Court finds that the Codicil dated 3 January 2015, propounded by Lucas Bennett, is a forgery and is of no legal effect. The estate is to be administered in accordance with the will of the Deceased dated 17 August 2014.</p>
-<p class="judgment-para"><span class="para-num">74.</span> The Court finds that Lucas Bennett has engaged in serious misconduct in the administration of the estate, including the propounding of a forged codicil, the assertion of a false debt against the estate, the improper transfer of estate funds to his personal account, and the deliberate misuse of his position as executor for personal advantage and to exert pressure on a beneficiary. He is not a fit and proper person to act as executor.</p>
-<p class="judgment-para"><span class="para-num">75.</span> The Court finds that Claire Bennett, while not guilty of active dishonesty, has failed to discharge her duties as executor with the diligence required by law. She has abdicated her responsibilities to her co-executor and has failed to take reasonable steps to protect the interests of the estate and the beneficiaries. She is not a suitable person to remain as executor.</p>
-<p class="judgment-para"><span class="para-num">76.</span> The Court finds that the proper administration of the estate requires that both executors be removed and that an independent professional administrator be appointed to complete the administration.</p>
-<p class="judgment-para"><span class="para-num">77.</span> The Court expresses its concern at the conduct of these proceedings and the significant erosion of the estate by legal costs. It is a matter of regret that family disputes of this nature are not resolved without recourse to litigation. However, the Court's role is to ensure that the testamentary intentions of the Deceased, as expressed in his valid will, are given effect, and that the estate is administered according to law.</p>
-<h2 class="section-heading">ORDERS</h2>
-<p class="judgment-para"><span class="para-num">78.</span> The Court declares that the document purporting to be a codicil to the will of the late David Halvorsen dated 3 January 2015 is not a valid testamentary instrument of the Deceased and is of no force or effect.</p>
-<p class="judgment-para"><span class="para-num">79.</span> The grant of probate of the will and codicil of the late David Halvorsen made to Lucas Bennett and Claire Bennett on 22 June 2016 is revoked.</p>
-<p class="judgment-para"><span class="para-num">80.</span> Lucas Bennett and Claire Bennett are removed as executors and trustees of the estate of the late David Halvorsen.</p>
-<p class="judgment-para"><span class="para-num">81.</span> Letters of administration de bonis non of the estate of the late David Halvorsen, limited to administration in accordance with the will dated 17 August 2014, are to be granted to an independent professional administrator to be nominated by the applicant and approved by the Registrar, or failing agreement, to be appointed by the Registrar.</p>
-<p class="judgment-para"><span class="para-num">82.</span> Within 28 days of the date of these orders, Lucas Bennett and Claire Bennett are to deliver to the administrator appointed pursuant to Order 81: <br>&emsp;(a) all books, records, documents, and information in their possession or control relating to the estate; <br>&emsp;(b) a full and complete account of all dealings with the assets of the estate from the date of the grant of probate to the date of delivery; and <br>&emsp;(c) all estate assets in their possession or control, including all funds held in any account operated for the purposes of the estate.</p>
-<p class="judgment-para"><span class="para-num">83.</span> Within 60 days of the date of these orders, Lucas Bennett is to repay to the estate the sum of $85,000, being the amount improperly transferred from the estate account to his personal account between July 2016 and January 2017, together with interest calculated in accordance with the Court rates from the date of each transfer to the date of repayment.</p>
-<p class="judgment-para"><span class="para-num">84.</span> The administrator appointed pursuant to Order 81 is directed to complete the administration of the estate in accordance with the will dated 17 August 2014 with all reasonable expedition and to provide accounts to the beneficiaries at intervals of not more than six months.</p>
-<p class="judgment-para"><span class="para-num">85.</span> Lucas Bennett is to pay the costs of the applicant of and incidental to these proceedings on an indemnity basis.</p>
-<p class="judgment-para"><span class="para-num">86.</span> Claire Bennett is to pay the costs of the applicant of and incidental to these proceedings on a standard basis.</p>
-<p class="judgment-para"><span class="para-num">87.</span> The costs of the administrator appointed pursuant to Order 81 shall be costs in the administration of the estate.</p>
-<p class="judgment-para"><span class="para-num">88.</span> The parties have liberty to apply on seven days' notice for further directions in relation to the implementation of these orders.</p>
+                <div style="color: #666;">Hearing Date(s):</div>
+                <div>12–15 June 2018</div>
 
+                <div style="color: #666;">Decision Date:</div>
+                <div>28 September 2018</div>
 
-  <div class="footer-meta">
-    Re Estate of Halvorsen (Deceased); Bennett v Bennett [2018] NSWSC 644<br>
-    Supreme Court of New South Wales &mdash; Equity Division &mdash; 28 September 2018<br>
-    This document is a simulated judgment for educational purposes.
-  </div>
+                <div style="color: #666;">Jurisdiction:</div>
+                <div>Equity Division (Probate List)</div>
 
-</div>
+                <div style="color: #666;">Before:</div>
+                <div>Justice Eleanor Whitmore</div>
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid #ddd; margin: 30px 0;">
+
+            <!-- Document Body -->
+            <div style="font-size: 14px; line-height: 1.6; color: #222;">
+                <h3 style="text-align: center; font-size: 14px; text-transform: uppercase; margin: 30px 0 20px 0;">INTRODUCTION</h3>
+<p style="margin-bottom: 15px;"><strong>1.</strong> This is an application concerning the administration of the estate of the late Mr David Halvorsen ("the Deceased"), who died on 4 March 2016 at the age of seventy-three years. The proceedings arise in the context of serious allegations concerning the conduct of the executors, namely Mr Lucas Bennett and Ms Claire Bennett, who are brother and sister respectively and are the adult children of the Deceased from his first marriage.</p>
+<p style="margin-bottom: 15px;"><strong>2.</strong> The applicant, Mr Christopher Bennett, is also a child of the Deceased and a beneficiary under the will dated 17 August 2014. He commenced these proceedings by summons filed on 15 February 2017, seeking removal of both executors, revocation of the grant of probate made on 22 June 2016, and consequential orders for the appointment of an independent administrator to complete the administration of the estate.</p>
+<p style="margin-bottom: 15px;"><strong>3.</strong> The proceedings were heard over four days between 12 and 15 June 2018. The applicant was represented by Mr D. Hartley of counsel. The first respondent, Lucas Bennett, appeared in person. The second respondent, Claire Bennett, was represented by Ms R. Templeton of counsel. The Court received affidavit evidence from seven witnesses and oral testimony from four witnesses, including cross-examination of both respondents.</p>
+<p style="margin-bottom: 15px;"><strong>4.</strong> The central issue is whether the executors have so misconducted themselves as to warrant the intervention of the Court in equity to protect the proper administration of the estate. Ancillary questions arise concerning the validity of certain instruments purportedly executed by the Deceased, the conduct of the executors in relation to estate assets, and the appropriate form of relief should misconduct be established.</p>
+<p style="margin-bottom: 15px;"><strong>5.</strong> The Court acknowledges the regrettable nature of these proceedings, which have pitted sibling against sibling and have substantially depleted the estate through legal costs. Nevertheless, the issues raised are serious and go to the integrity of the testamentary process and the proper administration of deceased estates in this State.</p>
+<h3 style="text-align: center; font-size: 14px; text-transform: uppercase; margin: 30px 0 20px 0;">FACTS</h3>
+<p style="margin-bottom: 15px;"><strong>6.</strong> The Deceased, David Halvorsen, was born on 12 November 1942. He was a retired civil engineer who had accumulated significant assets over his working life, including a family home in Killara valued at approximately $2.8 million, an investment property in Port Macquarie valued at approximately $980,000, shareholdings in publicly listed companies valued at approximately $640,000, and cash deposits totaling approximately $420,000 held across three financial institutions.</p>
+<p style="margin-bottom: 15px;"><strong>7.</strong> The Deceased was married twice. His first marriage, to Margaret Halvorsen (née Thompson), produced three children: Lucas Bennett (born 1968), Claire Bennett (born 1970), and the applicant, Christopher Bennett (born 1973). That marriage ended in divorce in 1985. The Deceased married his second wife, Helen Halvorsen (née Park), in 1988. There were no children of that marriage. Helen Halvorsen predeceased the Deceased, having died on 19 November 2013.</p>
+<p style="margin-bottom: 15px;"><strong>8.</strong> Following the death of Helen Halvorsen, the Deceased lived alone in the Killara property. The evidence indicates that his relationship with his three children varied considerably. He maintained regular contact with Christopher Bennett, who visited him approximately once per fortnight. His contact with Claire Bennett was less frequent, typically limited to family occasions. His relationship with Lucas Bennett had been estranged for a period of approximately six years between 2007 and 2013, after which some contact resumed, though it was described in evidence as "strained and intermittent."</p>
+<p style="margin-bottom: 15px;"><strong>9.</strong> The Deceased executed a formal will on 17 August 2014, prepared by his long-standing solicitor, Mr Raymond Foster of Foster &amp; Associates, Hornsby. The will appointed Lucas Bennett and Claire Bennett as joint executors and trustees. It divided the residuary estate equally between the three children of the Deceased, subject to certain specific legacies of personal effects.</p>
+<p style="margin-bottom: 15px;"><strong>10.</strong> The will was executed in the presence of Mr Foster and his legal secretary, Ms Janet Wilmott, both of whom provided affidavit evidence confirming the Deceased's apparent testamentary capacity at the time of execution. Mr Foster deposed that he had taken detailed instructions from the Deceased over two conferences and was satisfied that the Deceased understood the nature and extent of his assets and the claims upon his bounty.</p>
+<p style="margin-bottom: 15px;"><strong>11.</strong> A document purporting to be a codicil to the will, dated 3 January 2015 ("the Codicil"), was produced by Lucas Bennett following the Deceased's death. The Codicil purported to vary the distribution of the residuary estate by reducing the share allocated to Christopher Bennett to twenty percent and increasing the shares allocated to Lucas Bennett and Claire Bennett to forty percent each. The Codicil also purported to acknowledge a debt of $100,000 owed by the estate to Lucas Bennett for "care and assistance provided during 2013–2014."</p>
+<p style="margin-bottom: 15px;"><strong>12.</strong> The Codicil was not prepared by Mr Foster. It was typewritten on plain paper and bore what purported to be the signature of the Deceased, witnessed by a neighbour, Mr Gregory Talbot. Mr Talbot gave evidence at the hearing and was cross-examined extensively, as discussed below.</p>
+<p style="margin-bottom: 15px;"><strong>13.</strong> The Deceased died on 4 March 2016. The cause of death was recorded as myocardial infarction. He was found at his home by Christopher Bennett, who had attended for their regular fortnightly visit.</p>
+<p style="margin-bottom: 15px;"><strong>14.</strong> Following the funeral, Lucas Bennett informed his siblings of the existence of the will and the Codicil. He produced the original of the will and the Codicil at a meeting held at the Killara property on 21 March 2016. This meeting was attended by all three siblings and was described in evidence as "tense and confrontational."</p>
+<p style="margin-bottom: 15px;"><strong>15.</strong> Christopher Bennett expressed immediate concerns about the authenticity of the Codicil, noting that he had visited the Deceased regularly during the relevant period and had no knowledge of any claimed debt to Lucas Bennett. He also observed that the Deceased's signature on the Codicil appeared, in his view, "significantly different" from the signature on the will.</p>
+<p style="margin-bottom: 15px;"><strong>16.</strong> Despite these concerns, Lucas Bennett and Claire Bennett proceeded to apply for probate. Probate was granted in common form by the Registrar on 22 June 2016. Christopher Bennett did not lodge a caveat at that time, evidence having been given that he was uncertain of his legal rights and was attempting to resolve the matter amicably within the family.</p>
+<p style="margin-bottom: 15px;"><strong>17.</strong> Following the grant of probate, the executors assumed control of the estate assets. They took possession of the Killara property, arranged for the transfer of the Port Macquarie investment property into their names as executors, consolidated the Deceased's bank accounts into a single estate account operated by Lucas Bennett, and liquidated a portion of the share portfolio.</p>
+<p style="margin-bottom: 15px;"><strong>18.</strong> Between July 2016 and January 2017, Lucas Bennett caused the transfer of $85,000 from the estate account to his personal account. The stated purpose of these transfers was "reimbursement of expenses incurred in estate administration" and "partial satisfaction of the debt owed to me by the estate."</p>
+<p style="margin-bottom: 15px;"><strong>19.</strong> Claire Bennett gave evidence that she was aware of some of these transfers but accepted Lucas Bennett's explanations without seeking independent verification. She deposed that she "trusted her brother to act properly" and "did not wish to create conflict within the family." She acknowledged, however, that she did not review bank statements, obtain independent legal advice on the validity of the claimed debt, or seek an accounting from Lucas Bennett in relation to estate expenditure.</p>
+<p style="margin-bottom: 15px;"><strong>20.</strong> The executors failed to provide estate accounts to the beneficiaries in a timely manner. Despite repeated requests from Christopher Bennett made through his solicitors in August 2016, October 2016, and December 2016, no substantive response was received. Partial accounts were eventually provided on 3 February 2017, some eight months after the grant of probate, and were described by the applicant's forensic accountant, Mr Thomas Eversley, as "incomplete, inconsistent, and lacking in supporting documentation."</p>
+<p style="margin-bottom: 15px;"><strong>21.</strong> Communication between the executors and Christopher Bennett deteriorated progressively. The applicant's solicitors sent twelve letters to the executors between July 2016 and January 2017 seeking information about the administration of the estate. The executors' responses, when provided at all, were described as "evasive and unhelpful."</p>
+<p style="margin-bottom: 15px;"><strong>22.</strong> Significantly, the applicant's solicitors obtained, by subpoena issued to Lucas Bennett's mobile telephone service provider, a series of text messages exchanged between Lucas Bennett and Claire Bennett in the period August 2016 to November 2016. These messages were tendered in evidence and are of considerable probative value.</p>
+<p style="margin-bottom: 15px;"><strong>23.</strong> In a message dated 14 August 2016, Lucas Bennett wrote to Claire Bennett: "Chris keeps asking about accounts. I'm not giving him anything until he drops this nonsense about the codicil."</p>
+<p style="margin-bottom: 15px;"><strong>24.</strong> In a message dated 3 September 2016, Lucas Bennett wrote: "I'm going to delay distribution until payment of $100,000 is made to me personally. The estate can wait. Chris can wait. I'm the executor, I decide."</p>
+<p style="margin-bottom: 15px;"><strong>25.</strong> In a message dated 22 October 2016, Claire Bennett responded to a query from Lucas Bennett about Christopher's complaints by stating: "I don't know, just do what you think is best. I don't want to be involved in the arguments." Claire Bennett gave evidence that she regretted this response but maintained that she did not, at the time, understand the legal implications of her brother's conduct.</p>
+<p style="margin-bottom: 15px;"><strong>26.</strong> The Court has carefully considered these messages. They are plainly admissible and constitute admissions against interest. The Court finds that they demonstrate a conscious decision by Lucas Bennett to use his position as executor to exert personal leverage over a beneficiary, and a failure by Claire Bennett to discharge her independent duty of proper inquiry as a co-executor.</p>
+<p style="margin-bottom: 15px;"><strong>27.</strong> The applicant engaged Dr Susan Hartigan, a forensic document examiner of twenty-three years' standing, to examine the signature on the Codicil. Dr Hartigan holds a Bachelor of Science with Honours in forensic science, a Master of Forensic Studies in document examination, and is accredited by the Australian and New Zealand Forensic Science Society. She has given expert evidence in this Court on seventeen previous occasions.</p>
+<p style="margin-bottom: 15px;"><strong>28.</strong> Dr Hartigan conducted a comparative analysis of the signature on the Codicil against twelve known specimens of the Deceased's signature obtained from independent sources, including bank records, passport applications, the original will, and correspondence held by Mr Foster's office. Her analysis employed stereomicroscopy, electrostatic detection apparatus, and video spectral comparison.</p>
+<p style="margin-bottom: 15px;"><strong>29.</strong> Dr Hartigan concluded, and the Court accepts, that the signature on the Codicil displays multiple characteristics inconsistent with the known specimens. Specifically, the letter formation in the surname "Halvorsen" shows an unusual termination stroke not present in any of the twelve known specimens, the pen pressure pattern measured by electrostatic detection is inconsistent with the established pattern of the Deceased, and the baseline alignment differs markedly from the consistent baseline maintained by the Deceased across the known specimens.</p>
+<p style="margin-bottom: 15px;"><strong>30.</strong> Dr Hartigan expressed her conclusion in the following terms: "On the balance of probabilities, and to a high degree of certainty, the questioned signature on the document dated 3 January 2015 was not written by David Halvorsen." The respondents did not call any expert evidence to contradict this conclusion. Mr Gregory Talbot, the purported witness, gave evidence that was, in the Court's assessment, unsatisfactory and internally inconsistent, as discussed further below.</p>
+<p style="margin-bottom: 15px;"><strong>31.</strong> The debt of $100,000 claimed by Lucas Bennett was said to arise from "care and assistance provided during 2013–2014," a period during which the Deceased was recovering from hip replacement surgery. However, no documentation of this debt existed. There was no loan agreement, no acknowledgment in the Deceased's financial records, no mention in correspondence with Mr Foster, and no reference in any medical or care records.</p>
+<p style="margin-bottom: 15px;"><strong>32.</strong> The medical evidence, tendered by the applicant and not challenged by the respondents, established that the Deceased's hip replacement surgery was performed on 18 March 2013, that he was discharged to a rehabilitation facility where he remained for three weeks, and that he received in-home care arranged through an accredited provider, CareFirst Community Services, for a period of eight weeks following discharge. The records of CareFirst, tendered in evidence, make no reference to any additional care provided by Lucas Bennett.</p>
+<p style="margin-bottom: 15px;"><strong>33.</strong> Christopher Bennett gave evidence, which the Court accepts, that he himself provided significant assistance to the Deceased during the recovery period, including transportation to medical appointments, meal preparation, and assistance with household tasks. He stated that during this period he saw Lucas Bennett at the Deceased's home on only two occasions, once for approximately thirty minutes on 26 March 2013 and once for approximately one hour on 14 April 2013.</p>
+<p style="margin-bottom: 15px;"><strong>34.</strong> Lucas Bennett was unable to produce any contemporaneous records supporting the claimed assistance, any diary entries, any correspondence with the Deceased relating to the alleged debt, or any witness who could corroborate the provision of care. His evidence on this point was vague and, in parts, contradictory. When cross-examined, he stated that the arrangement had been "informal" and that the Deceased had "promised to look after him in the will," but was unable to explain why the debt was not then reflected in the will prepared by Mr Foster or in any other document.</p>
+<p style="margin-bottom: 15px;"><strong>35.</strong> Mr Gregory Talbot, who purported to have witnessed the Deceased's signature on the Codicil, gave evidence that was, in the Court's assessment, evasive and marked by significant inconsistencies. He gave inconsistent accounts in cross-examination of the circumstances in which he allegedly witnessed the signing, changing his description of the date, time, and location on multiple occasions.</p>
+<p style="margin-bottom: 15px;"><strong>36.</strong> Most significantly, Mr Talbot initially stated that he had witnessed the Deceased sign the Codicil at the Deceased's home on "the morning of 3 January 2015." However, records tendered by the applicant established that Mr Talbot was, at that time, in Queensland attending a family wedding, having departed Sydney on 28 December 2014 and returned on 7 January 2015. When confronted with this evidence, Mr Talbot altered his account to claim that he had witnessed the signing "around that time, it might have been earlier in December," an account the Court finds to be inherently unreliable.</p>
+<p style="margin-bottom: 15px;"><strong>37.</strong> The Court finds that Mr Talbot is not a credible witness. His evidence does not support the authenticity of the Codicil. To the contrary, the weight of the evidence, taken as a whole, compels the conclusion that the Codicil is a fabrication.</p>
+<h3 style="text-align: center; font-size: 14px; text-transform: uppercase; margin: 30px 0 20px 0;">ISSUES FOR DETERMINATION</h3>
+<p style="margin-bottom: 15px;"><strong>38.</strong> Whether the Codicil dated 3 January 2015 is a valid testamentary instrument of the Deceased.</p>
+<p style="margin-bottom: 15px;"><strong>39.</strong> Whether the executors, or either of them, have breached fiduciary duties owed to the estate and the beneficiaries.</p>
+<p style="margin-bottom: 15px;"><strong>40.</strong> Whether the conduct of Lucas Bennett constitutes serious misconduct or demonstrates such a conflict of interest as to justify his removal as executor.</p>
+<p style="margin-bottom: 15px;"><strong>41.</strong> Whether the conduct of Claire Bennett, whether by participation or omission, warrants similar relief.</p>
+<p style="margin-bottom: 15px;"><strong>42.</strong> Whether the grant of probate made on 22 June 2016 should be revoked.</p>
+<p style="margin-bottom: 15px;"><strong>43.</strong> Whether, and in what form, relief should be granted in relation to the costs of these proceedings.</p>
+<p style="margin-bottom: 15px;"><strong>44.</strong> What orders are necessary to ensure the due and proper administration of the estate.</p>
+<h3 style="text-align: center; font-size: 14px; text-transform: uppercase; margin: 30px 0 20px 0;">APPLICABLE LEGAL PRINCIPLES</h3>
+<p style="margin-bottom: 15px;"><strong>45.</strong> The jurisdiction of this Court to remove an executor and to revoke a grant of probate is well established. The guiding principle is the due and proper administration of the estate and the interests of the parties beneficially entitled to the estate. The Court's power is protective, not punitive. The question is whether the estate is being properly administered, and whether the executor is a fit and proper person to continue in that office.</p>
+<p style="margin-bottom: 15px;"><strong>46.</strong> An executor stands in a fiduciary position in relation to the estate and the beneficiaries. The executor is required to act with reasonable diligence, to avoid conflicts of interest, to account for dealings with estate property, and to distribute the estate in accordance with the terms of the will and the law. A breach of these obligations, particularly where it involves dishonesty, self-dealing, or a failure to account, may provide grounds for removal.</p>
+<p style="margin-bottom: 15px;"><strong>47.</strong> The Court may revoke a grant of probate where the grant was obtained by fraud, where the will propounded is subsequently found to be invalid, or where the executor has subsequently become unfit to act. The jurisdiction is exercised with caution, but is not to be constrained where the due administration of the estate requires intervention.</p>
+<p style="margin-bottom: 15px;"><strong>48.</strong> Where co-executors are appointed and one engages in misconduct, the question is whether the other executor has demonstrated sufficient independence and diligence to continue to act. A co-executor who is aware of, or ought reasonably to be aware of, misconduct by a fellow executor and takes no steps to investigate or address it may also be liable to removal.</p>
+<p style="margin-bottom: 15px;"><strong>49.</strong> The onus of proof in these proceedings rests on the applicant. The standard of proof is the balance of probabilities, applied in accordance with the principles articulated in Briginshaw v Briginshaw (1938) 60 CLR 336, having regard to the seriousness of the allegations made.</p>
+<p style="margin-bottom: 15px;"><strong>50.</strong> As to testamentary instruments, the Court must be satisfied that the document propounded represents the true will of the Deceased, executed in accordance with the formal requirements of the Succession Act 2006 (NSW), and free from undue influence, fraud, or forgery. Where the authenticity of a testamentary instrument is challenged, the propounder bears the onus of establishing its validity.</p>
+<h3 style="text-align: center; font-size: 14px; text-transform: uppercase; margin: 30px 0 20px 0;">REASONING</h3>
+<p style="margin-bottom: 15px;"><strong>51.</strong> The Court turns first to the question of the validity of the Codicil, as this issue is foundational to the remaining questions in dispute. The Codicil was propounded by Lucas Bennett and was relied upon by both respondents as the basis for the distribution they sought to implement and as the foundation for Lucas Bennett's claim to a debt of $100,000 owed by the estate.</p>
+<p style="margin-bottom: 15px;"><strong>52.</strong> The Court has carefully considered the expert evidence of Dr Susan Hartigan. Her qualifications are impressive and were not challenged. Her methodology was transparently explained and is consistent with accepted forensic practice. Her conclusion that the signature on the Codicil was not written by the Deceased was expressed with appropriate caution and is supported by a detailed comparative analysis. The respondents did not adduce any expert evidence to contradict her findings. The Court accepts Dr Hartigan's evidence in its entirety.</p>
+<p style="margin-bottom: 15px;"><strong>53.</strong> The Court has also considered the evidence of Mr Gregory Talbot, the purported attesting witness. His evidence was, as the Court has observed, wholly unsatisfactory. The inconsistencies in his account, combined with the uncontested evidence that he was interstate on the date the Codicil purports to have been executed, lead the Court to conclude that Mr Talbot's evidence is incapable of belief.</p>
+<p style="margin-bottom: 15px;"><strong>54.</strong> The Court finds, on the balance of probabilities and to a high degree of satisfaction, that the Codicil dated 3 January 2015 is not a valid testamentary instrument of the Deceased. The signature on the Codicil is a forgery. The Codicil is a fabrication and is of no legal effect. The Court rejects it in its entirety.</p>
+<p style="margin-bottom: 15px;"><strong>55.</strong> This finding is significant not only for the substantive administration of the estate, which must proceed on the basis of the will dated 17 August 2014, but also for the assessment of the conduct of Lucas Bennett, who propounded the Codicil and sought to rely upon it for personal advantage. The Court will return to this matter in considering the question of his fitness to remain as executor.</p>
+<p style="margin-bottom: 15px;"><strong>56.</strong> The evidence establishes, to the Court's satisfaction, a pattern of conduct by Lucas Bennett that is fundamentally incompatible with the obligations of an executor and fiduciary. The Court identifies the following matters as particularly significant.</p>
+<p style="margin-bottom: 15px;"><strong>57.</strong> First, Lucas Bennett propounded a forged codicil that purported to both increase his share of the residuary estate and to create a debt of $100,000 in his favour. Whether Lucas Bennett was himself the author of the forgery, or merely adopted a document he knew or ought to have known was not authentic, is a question the Court need not determine for present purposes. It is sufficient to observe that the forgery existed, that Lucas Bennett propounded it, and that he sought to gain personal advantage from it. This conduct alone is sufficient to demonstrate his unfitness to act as executor.</p>
+<p style="margin-bottom: 15px;"><strong>58.</strong> Second, Lucas Bennett asserted a debt of $100,000 against the estate for which there was no documentary support. The absence of documentation is remarkable given the size of the claimed debt and the fact that the Deceased had engaged a solicitor to prepare his will and had ample opportunity to document the debt had he intended to acknowledge it. The medical and care records tendered in evidence do not support the claim. The Court finds that the claimed debt was not genuinely owed by the estate.</p>
+<p style="margin-bottom: 15px;"><strong>59.</strong> Third, Lucas Bennett caused the transfer of $85,000 from the estate account to his personal account without proper authorisation or justification. These transfers were not approved by the co-executor acting independently, were not disclosed to the beneficiaries in a timely manner, and were not supported by adequate documentation. They represent an improper dealing with estate property and a breach of fiduciary duty.</p>
+<p style="margin-bottom: 15px;"><strong>60.</strong> Fourth, the text messages tendered in evidence are, in the Court's assessment, damning. They reveal a deliberate intention to use control of the estate as a means of exerting pressure on a beneficiary. The statement that Lucas Bennett would "delay distribution until payment of $100,000 is made to me personally" is a plain statement of intention to misuse the powers of an executor for personal advantage. The statement that "Chris can wait. I'm the executor, I decide" reflects a fundamental misunderstanding of the executor's role, which is not one of arbitrary power but of fiduciary obligation.</p>
+<p style="margin-bottom: 15px;"><strong>61.</strong> Fifth, Lucas Bennett failed to provide timely and transparent accounts of the administration of the estate. Beneficiaries are entitled to be informed of the progress of administration and to have access to proper accounts. The persistent failure to respond to reasonable requests for information is itself a breach of duty.</p>
+<p style="margin-bottom: 15px;"><strong>62.</strong> The Court finds that Lucas Bennett has engaged in serious misconduct in the administration of the estate. He has breached fiduciary duties owed to the estate and the beneficiaries. He has demonstrated a propensity to place his personal interests above those of the estate and the other beneficiaries. He is not a fit and proper person to continue as executor.</p>
+<p style="margin-bottom: 15px;"><strong>63.</strong> The position of Claire Bennett requires separate consideration. The evidence does not establish that Claire Bennett was complicit in the forgery of the Codicil or that she was aware of the forgery at the time she assumed the role of executor. However, the matter does not end there.</p>
+<p style="margin-bottom: 15px;"><strong>64.</strong> Claire Bennett was a co-executor and, as such, bore an independent duty to act in the best interests of the estate and to exercise reasonable diligence in the discharge of her office. The evidence establishes that she failed to do so in several material respects.</p>
+<p style="margin-bottom: 15px;"><strong>65.</strong> She was aware of the disputed Codicil and of her brother Christopher's concerns regarding its authenticity. She was in a position, as co-executor, to inquire into the circumstances of the Codicil, to seek independent legal advice, and to ensure that the estate was not administered on the basis of an instrument of doubtful authenticity. She took none of these steps. She chose, instead, to defer to her brother Lucas and to avoid involvement in the dispute.</p>
+<p style="margin-bottom: 15px;"><strong>66.</strong> She was aware of, or ought reasonably to have been aware of, the transfers of estate funds to Lucas Bennett's personal account. She did not seek an independent accounting or verification of these transfers. She did not, on her own evidence, review bank statements or other financial records. She simply trusted her brother.</p>
+<p style="margin-bottom: 15px;"><strong>67.</strong> The text messages tendered in evidence, while far less damaging to Claire Bennett than to Lucas Bennett, reveal a troubling passivity. Her response to Lucas's statement of intention to delay distribution — "I don't know, just do what you think is best" — amounts to an abdication of her responsibilities as co-executor.</p>
+<p style="margin-bottom: 15px;"><strong>68.</strong> The Court finds that Claire Bennett has failed to discharge her duties as executor with the diligence required by law. While her conduct does not rise to the level of dishonesty or active misconduct, her persistent passivity and failure to exercise independent judgment have contributed materially to the breakdown in the proper administration of the estate. The Court finds that she is not a suitable person to continue as sole executor, and that the due administration of the estate requires the removal of both executors.</p>
+<p style="margin-bottom: 15px;"><strong>69.</strong> The evidence demonstrates, and the Court finds, that the relationship of trust and confidence between the executors and the applicant beneficiary has broken down irretrievably. The circumstances giving rise to this breakdown are primarily, though not exclusively, attributable to the conduct of Lucas Bennett. However, the involvement of Claire Bennett in the failed administration, even if by omission rather than commission, means that she cannot command the confidence of the beneficiaries necessary for the proper completion of the administration.</p>
+<p style="margin-bottom: 15px;"><strong>70.</strong> The Court is mindful that removal of an executor is a serious step, not to be undertaken lightly. However, where, as here, the executors have demonstrated an inability or unwillingness to discharge their duties in accordance with law, and where the estate is at risk of further loss or delay, the Court must intervene. The due and proper administration of the estate requires that both executors be removed and that an independent administrator be appointed.</p>
+<p style="margin-bottom: 15px;"><strong>71.</strong> The grant of probate was made on the basis of the will dated 17 August 2014 and the Codicil dated 3 January 2015. The Court has found that the Codicil is a forgery. The grant was therefore obtained, at least in part, by the propounding of an invalid instrument. In these circumstances, and having regard also to the subsequent misconduct of the executors, the Court is satisfied that the grant of probate should be revoked.</p>
+<p style="margin-bottom: 15px;"><strong>72.</strong> The Court will order that letters of administration de bonis non be granted to an independent professional administrator, to be appointed by the Registrar, to administer the estate in accordance with the will dated 17 August 2014 on the basis that the Codicil is a nullity. The administrator will be directed to complete the administration of the estate with expedition and to provide regular accounts to the beneficiaries.</p>
+<h3 style="text-align: center; font-size: 14px; text-transform: uppercase; margin: 30px 0 20px 0;">CONCLUSION</h3>
+<p style="margin-bottom: 15px;"><strong>73.</strong> The Court finds that the Codicil dated 3 January 2015, propounded by Lucas Bennett, is a forgery and is of no legal effect. The estate is to be administered in accordance with the will of the Deceased dated 17 August 2014.</p>
+<p style="margin-bottom: 15px;"><strong>74.</strong> The Court finds that Lucas Bennett has engaged in serious misconduct in the administration of the estate, including the propounding of a forged codicil, the assertion of a false debt against the estate, the improper transfer of estate funds to his personal account, and the deliberate misuse of his position as executor for personal advantage and to exert pressure on a beneficiary. He is not a fit and proper person to act as executor.</p>
+<p style="margin-bottom: 15px;"><strong>75.</strong> The Court finds that Claire Bennett, while not guilty of active dishonesty, has failed to discharge her duties as executor with the diligence required by law. She has abdicated her responsibilities to her co-executor and has failed to take reasonable steps to protect the interests of the estate and the beneficiaries. She is not a suitable person to remain as executor.</p>
+<p style="margin-bottom: 15px;"><strong>76.</strong> The Court finds that the proper administration of the estate requires that both executors be removed and that an independent professional administrator be appointed to complete the administration.</p>
+<p style="margin-bottom: 15px;"><strong>77.</strong> The Court expresses its concern at the conduct of these proceedings and the significant erosion of the estate by legal costs. It is a matter of regret that family disputes of this nature are not resolved without recourse to litigation. However, the Court's role is to ensure that the testamentary intentions of the Deceased, as expressed in his valid will, are given effect, and that the estate is administered according to law.</p>
+<h3 style="text-align: center; font-size: 14px; text-transform: uppercase; margin: 30px 0 20px 0;">ORDERS</h3>
+<p style="margin-bottom: 15px;"><strong>78.</strong> The Court declares that the document purporting to be a codicil to the will of the late David Halvorsen dated 3 January 2015 is not a valid testamentary instrument of the Deceased and is of no force or effect.</p>
+<p style="margin-bottom: 15px;"><strong>79.</strong> The grant of probate of the will and codicil of the late David Halvorsen made to Lucas Bennett and Claire Bennett on 22 June 2016 is revoked.</p>
+<p style="margin-bottom: 15px;"><strong>80.</strong> Lucas Bennett and Claire Bennett are removed as executors and trustees of the estate of the late David Halvorsen.</p>
+<p style="margin-bottom: 15px;"><strong>81.</strong> Letters of administration de bonis non of the estate of the late David Halvorsen, limited to administration in accordance with the will dated 17 August 2014, are to be granted to an independent professional administrator to be nominated by the applicant and approved by the Registrar, or failing agreement, to be appointed by the Registrar.</p>
+<p style="margin-bottom: 15px;"><strong>82.</strong> Within 28 days of the date of these orders, Lucas Bennett and Claire Bennett are to deliver to the administrator appointed pursuant to Order 81: <br>&emsp;(a) all books, records, documents, and information in their possession or control relating to the estate; <br>&emsp;(b) a full and complete account of all dealings with the assets of the estate from the date of the grant of probate to the date of delivery; and <br>&emsp;(c) all estate assets in their possession or control, including all funds held in any account operated for the purposes of the estate.</p>
+<p style="margin-bottom: 15px;"><strong>83.</strong> Within 60 days of the date of these orders, Lucas Bennett is to repay to the estate the sum of $85,000, being the amount improperly transferred from the estate account to his personal account between July 2016 and January 2017, together with interest calculated in accordance with the Court rates from the date of each transfer to the date of repayment.</p>
+<p style="margin-bottom: 15px;"><strong>84.</strong> The administrator appointed pursuant to Order 81 is directed to complete the administration of the estate in accordance with the will dated 17 August 2014 with all reasonable expedition and to provide accounts to the beneficiaries at intervals of not more than six months.</p>
+<p style="margin-bottom: 15px;"><strong>85.</strong> Lucas Bennett is to pay the costs of the applicant of and incidental to these proceedings on an indemnity basis.</p>
+<p style="margin-bottom: 15px;"><strong>86.</strong> Claire Bennett is to pay the costs of the applicant of and incidental to these proceedings on a standard basis.</p>
+<p style="margin-bottom: 15px;"><strong>87.</strong> The costs of the administrator appointed pursuant to Order 81 shall be costs in the administration of the estate.</p>
+<p style="margin-bottom: 15px;"><strong>88.</strong> The parties have liberty to apply on seven days' notice for further directions in relation to the implementation of these orders.</p>
+
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
