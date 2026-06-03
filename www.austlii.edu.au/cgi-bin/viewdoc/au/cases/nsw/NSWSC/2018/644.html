@@ -5,50 +5,72 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Re Estate of Halvorsen (Deceased); Bennett v Bennett [2018] NSWSC 644 (28 September 2018)</title>
 <style>
-/* ===== RESET ===== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-/* ===== DESKTOP VIEW (>= 1024px) ===== */
 body {
-  background-color: #f5f5f5;
+  background-color: #FFFFFF;
   font-family: Times New Roman, Georgia, serif;
   color: #1a1a1a;
   line-height: 1.5;
-  margin: 0;
-  padding: 40px 20px;
 }
 
-.main-container {
-  background-color: #ffffff;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 40px 50px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-  border-radius: 0px;
-  border-left: none;
-  border-top: none;
+/* Top bar with logo */
+.top-bar {
+  background: #FFFFFF;
+  padding: 16px 40px 0 40px;
+  position: relative;
 }
 
-/* Header */
-.supreme-court-badge {
-  font-size: 14px;
-  color: #4d4d4d;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #e0e0e0;
-  padding-bottom: 12px;
+.top-bar .logo-link {
+  display: inline-block;
+  position: absolute;
+  top: 16px;
+  left: 40px;
 }
 
-.main-title {
-  font-size: 26px;
+.top-bar .logo-link img {
+  height: 40px;
+  width: auto;
+}
+
+/* Centered red header */
+.centered-header {
+  text-align: center;
+  padding: 8px 40px 0 40px;
+}
+
+.centered-header .court-line {
+  font-size: 22px;
   font-weight: bold;
-  color: #000000;
-  margin-top: 20px;
-  margin-bottom: 5px;
+  color: #CC0000;
+  font-family: Times New Roman, Georgia, serif;
   line-height: 1.3;
 }
 
+.centered-header .case-line {
+  font-size: 16px;
+  font-weight: bold;
+  color: #CC0000;
+  font-family: Times New Roman, Georgia, serif;
+  margin-top: 4px;
+  line-height: 1.3;
+}
+
+/* Main container below header */
+.main-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 50px 40px 50px;
+}
+
+/* Meta line */
+.last-updated {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+/* Citation block */
 .citation-block {
   font-family: Courier New, monospace;
   font-size: 14px;
@@ -57,7 +79,6 @@ body {
   padding: 12px 15px;
   border-left: 4px solid #2c3e66;
   margin: 20px 0;
-  font-weight: normal;
 }
 
 /* Meta data grid */
@@ -81,7 +102,7 @@ body {
   color: #000;
 }
 
-/* Judgment section */
+/* Judgment */
 .section-heading {
   font-size: 18px;
   font-weight: bold;
@@ -103,7 +124,6 @@ body {
   color: #2c3e66;
 }
 
-/* Catchwords box */
 .catchwords-box {
   background-color: #f8f9fc;
   border-left: 4px solid #2c3e66;
@@ -113,15 +133,12 @@ body {
   font-style: italic;
 }
 
-/* Legislation cited */
 .legislation-cited {
   background-color: #fef7e0;
   padding: 10px 15px;
-  border-radius: 0px;
   font-family: monospace;
 }
 
-/* Footer metadata */
 .footer-meta {
   margin-top: 40px;
   padding-top: 20px;
@@ -133,66 +150,50 @@ body {
 
 /* ===== TABLET (768px - 1023px) ===== */
 @media (min-width: 768px) and (max-width: 1023px) {
-  .main-container {
-    padding: 30px 30px;
-  }
-  .main-title {
-    font-size: 23px;
-  }
+  .top-bar { padding: 14px 30px 0 30px; }
+  .top-bar .logo-link { left: 30px; }
+  .centered-header { padding: 8px 30px 0 30px; }
+  .centered-header .court-line { font-size: 20px; }
+  .centered-header .case-line { font-size: 15px; }
+  .main-container { padding: 16px 30px 30px 30px; }
 }
 
-/* ===== ANDROID / MOBILE (< 768px) ===== */
+/* ===== MOBILE (< 768px) ===== */
 @media (max-width: 767px) {
-  body {
-    background-color: #f2f2f2;
-    font-family: Roboto, system-ui, -apple-system, serif;
-    color: #1e1e1e;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
+  body { font-family: Roboto, system-ui, -apple-system, serif; }
+
+  .top-bar {
+    padding: 12px 16px 0 16px;
+    text-align: center;
+  }
+
+  .top-bar .logo-link {
+    position: static;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .top-bar .logo-link img {
+    height: 32px;
+  }
+
+  .centered-header {
+    padding: 4px 16px 0 16px;
+  }
+
+  .centered-header .court-line {
+    font-size: 18px;
+  }
+
+  .centered-header .case-line {
+    font-size: 14px;
   }
 
   .main-container {
-    background-color: #ffffff;
-    width: 100%;
-    margin: 0;
-    padding: 20px 16px 32px 16px;
-    box-shadow: none;
-    border-radius: 0px;
-  }
-
-  .supreme-court-badge {
-    font-size: 12px;
-    color: #5a5a5a;
-    text-transform: uppercase;
-    letter-spacing: 0.3px;
-    margin-bottom: 8px;
-    border-bottom: 0.5px solid #dddddd;
-    padding-bottom: 8px;
-  }
-
-  .main-title {
-    font-size: 22px;
-    font-weight: bold;
-    color: #000000;
-    margin-top: 12px;
-    margin-bottom: 4px;
-    line-height: 1.35;
-    word-break: break-word;
-  }
-
-  .citation-block {
-    font-family: monospace;
-    font-size: 12px;
-    color: #1a3a5f;
-    background-color: #f4f6fa;
-    padding: 10px 12px;
-    border-left: 3px solid #1a3a5f;
-    margin: 16px 0;
+    padding: 16px 16px 32px 16px;
   }
 
   .meta-grid {
-    display: flex;
     flex-direction: column;
     gap: 12px;
     border-bottom: 1px solid #ececec;
@@ -201,25 +202,16 @@ body {
     font-size: 13px;
   }
 
-  .meta-item {
-    color: #444;
-  }
-
   .meta-item .label {
-    font-weight: 600;
-    color: #000;
     display: inline-block;
     min-width: 100px;
   }
 
   .section-heading {
     font-size: 17px;
-    font-weight: bold;
-    color: #0a0a0a;
     margin-top: 20px;
     margin-bottom: 8px;
     border-bottom: 0.5px solid #d4d4d4;
-    padding-bottom: 4px;
   }
 
   .judgment-para {
@@ -238,10 +230,8 @@ body {
   }
 
   .legislation-cited {
-    background-color: #fff6e8;
-    padding: 8px 12px;
-    font-family: monospace;
     font-size: 12px;
+    padding: 8px 12px;
   }
 
   .footer-meta {
@@ -250,47 +240,39 @@ body {
     border-top: 1px solid #eaeaea;
     font-size: 10px;
     color: #888;
-    text-align: center;
   }
 
-  /* Touch UI specifics */
   a, button, [role="button"] {
     min-height: 44px;
     min-width: 44px;
   }
 
-  html {
-    -webkit-text-size-adjust: 100%;
-  }
-
-  body {
-    padding-bottom: 20px;
-  }
+  html { -webkit-text-size-adjust: 100%; }
+  body { padding-bottom: 20px; }
 }
 
-/* ===== PRINT STYLES ===== */
 @media print {
-  body {
-    background: #fff;
-    padding: 0;
-  }
-  .main-container {
-    box-shadow: none;
-    max-width: 100%;
-    padding: 20px;
-  }
+  body { background: #fff; padding: 0; }
+  .main-container { max-width: 100%; padding: 20px; }
 }
 </style>
 </head>
 <body>
 
+<div class="top-bar">
+  <a class="logo-link" href="https://www.austlii.edu.au/" target="_blank" rel="noopener">
+    <img src="https://www.austlii.edu.au/images/logo.svg" alt="AustLII">
+  </a>
+</div>
+
+<div class="centered-header">
+  <div class="court-line">Supreme Court of New South Wales</div>
+  <div class="case-line">Re Estate of Halvorsen (Deceased); Bennett v Bennett [2018] NSWSC 644 (28 September 2018)</div>
+</div>
+
 <div class="main-container">
 
-  <div class="supreme-court-badge">Supreme Court of New South Wales &mdash; Equity Division (Probate List)</div>
-
-  <h1 class="main-title">Re Estate of Halvorsen (Deceased); Bennett v Bennett</h1>
-
-  <div class="citation-block">[2018] NSWSC 644 &mdash; 28 September 2018</div>
+  <p class="last-updated">Last Updated: 28 September 2018</p>
 
   <div class="meta-grid">
     <div class="meta-item"><span class="label">Before:</span> Whitmore J</div>
