@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fraud & Disputes — Case Outcomes</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f5; color: #222; }
+header { background: #630; color: #fff; padding: 2rem 1.5rem; text-align: center; }
+header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+header p { opacity: 0.85; font-size: 1rem; }
+main { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+.card { background: #fff; border-radius: 8px; padding: 1.5rem; margin-bottom: 1.5rem; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+.card h2 { font-size: 1.3rem; margin-bottom: 0.5rem; color: #630; }
+.card p { color: #555; margin-bottom: 1rem; line-height: 1.5; }
+.card a { color: #630; text-decoration: underline; }
+.card a:hover { color: #852; }
+.form-group { margin-bottom: 1rem; }
+.form-group label { display: block; margin-bottom: 0.4rem; font-weight: 500; }
+.form-group input, .form-group textarea { width: 100%; padding: 0.6rem; border: 1px solid #ccc; border-radius: 6px; font-family: inherit; font-size: 1rem; }
+.form-group textarea { min-height: 140px; resize: vertical; }
+button[type=\"submit\"] { background: #630; color: #fff; border: none; padding: 0.7rem 1.6rem; border-radius: 6px; font-size: 1rem; cursor: pointer; font-weight: 500; }
+button[type=\"submit\"]:hover { background: #852; }
+.confirmation { display: none; background: #e8f5e9; border: 1px solid #a5d6a7; color: #2e7d32; padding: 1rem; border-radius: 6px; margin-top: 1rem; }
+footer { text-align: center; padding: 1.5rem; color: #999; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+<header>
+<h1>Fraud & Disputes</h1>
+<p>If you believe you have been treated unfairly, help is available.</p>
+</header>
+<main>
+<div class="card">
+<h2>Unfair treatment by judges or courts</h2>
+<p>If you feel you have been treated unfairly by a judge or court, you are not alone. Concerns about judicial conduct, procedural irregularities, or bias should be raised with the appropriate oversight authority. If you believe criminal conduct has occurred, the matter can also be referred to law enforcement.</p>
+</div>
+
+<div class="card">
+<h2>Police or lawyer misconduct</h2>
+<p>If a police officer or lawyer has treated you wrongly, breached their duty, or acted improperly, you have the right to report it. You can lodge a complaint with the relevant professional body, or pass your concerns on to Crime Stoppers where they can be reviewed and acted upon.</p>
+</div>
+
+<div class="card">
+<h2>Estate fraud</h2>
+<p>If you suspect estate fraud, undue influence, a forged will, missing assets, or the misappropriation of an estate, every tip is treated carefully. No concern is too small — the right information can make a real difference.</p>
+</div>
+
+<div class="card">
+<h2>Report a concern</h2>
+<p><strong>Police Tip Line:</strong> <a href="tel:1800333000">1800 333 000</a></p>
+<p><strong>Sister site:</strong> <a href="https://www.crimestoppers.com.au" target="_blank" rel="noopener">crimestoppers.com.au</a></p>
+<p>You can also leave a secure message directly below. Every tip is treated carefully and reviewed by the appropriate team.</p>
+
+<form id="fraudForm" onsubmit="return submitFraudForm();">
+<div class="form-group">
+<label for="name">Your name (optional)</label>
+<input type="text" id="name" name="name" placeholder="Jane Doe">
+</div>
+<div class="form-group">
+<label for="email">Email address</label>
+<input type="email" id="email" name="email" placeholder="you@example.com" required>
+</div>
+<div class="form-group">
+<label for="message">Your message</label>
+<textarea id="message" name="message" placeholder="Describe your concern..." required></textarea>
+</div>
+<button type="submit">Send message securely</button>
+</form>
+
+<div class="confirmation" id="confirmation" role="status" aria-live="polite">
+<p>Thank you for your message. We have received your concern and will treat it with the care and attention it deserves. If immediate action is required, you may also contact the police tip line on <strong>1800 333 000</strong> or visit <a href="https://www.crimestoppers.com.au" target="_blank" rel="noopener">crimestoppers.com.au</a>.</p>
+</div>
+</div>
+
+</main>
+<footer>
+<p>Unofficial mirror for research. Official source: <a href="https://www.austlii.edu.au" style="color:#999;">austlii.edu.au</a></p>
+</footer>
+
+<script>
+function submitFraudForm() {
+  var form = document.getElementById('fraudForm');
+  var confirmation = document.getElementById('confirmation');
+  if (form && confirmation) {
+    form.style.display = 'none';
+    confirmation.style.display = 'block';
+  }
+  return false;
+}
+</script>
+</body>
+</html>
