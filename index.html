@@ -1,16 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="refresh" content="0; url=/austlii/index.html">
-<title>Redirecting…</title>
-<style>
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f5; color: #222; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; }
-  a { color: #630; }
-</style>
-<script>window.location.replace('/austlii/index.html');</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Case Outcomes Australia | Open Australian Legal Corpus</title>
+  <meta name="description" content="Australia's open legal case outcomes database. Searchable judgements and tribunal decisions — built for lawyers, researchers and the public.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://www.caseoutcomes.com.au/">
+  <style>
+    :root {
+      --ink: #0e1624;
+      --navy: #152238;
+      --cream: #f4efe4;
+      --gold: #c4a35a;
+      --muted: #6b7280;
+      --line: rgba(15, 23, 42, 0.12);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      color: var(--ink);
+      background: var(--cream);
+      line-height: 1.5;
+    }
+    a { color: inherit; }
+    .wrap { width: min(1080px, calc(100% - 2.5rem)); margin-inline: auto; }
+    header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.25rem 0; border-bottom: 1px solid var(--line);
+    }
+    .brand { font-weight: 700; letter-spacing: -0.02em; font-size: 1.15rem; text-decoration: none; }
+    .brand span { color: var(--gold); }
+    nav { display: flex; gap: 1rem; font-size: 0.95rem; }
+    nav a { text-decoration: none; opacity: 0.8; }
+    nav a:hover { opacity: 1; }
+    .hero {
+      display: grid; gap: 1.5rem; padding: 4.5rem 0 3rem;
+      grid-template-columns: 1.4fr 1fr;
+    }
+    @media (max-width: 820px) { .hero { grid-template-columns: 1fr; padding-top: 3rem; } }
+    .eyebrow {
+      font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+      text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.72rem;
+      color: var(--gold); font-weight: 700; margin-bottom: 0.75rem;
+    }
+    h1 {
+      font-size: clamp(2.4rem, 5vw, 3.6rem); line-height: 1.05;
+      margin: 0 0 1rem; letter-spacing: -0.03em;
+    }
+    .lede { font-size: 1.15rem; max-width: 36rem; color: #334155; margin: 0 0 1.5rem; }
+    .actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      text-decoration: none; border-radius: 999px; padding: 0.8rem 1.2rem;
+      font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+      font-size: 0.92rem; font-weight: 600; border: 1px solid transparent;
+    }
+    .btn.primary { background: var(--navy); color: var(--cream); }
+    .btn.secondary { background: transparent; border-color: var(--line); }
+    .panel {
+      background: var(--navy); color: var(--cream); border-radius: 1.25rem;
+      padding: 1.5rem; box-shadow: 0 24px 60px rgba(15, 23, 42, 0.18);
+    }
+    .panel h2 { margin: 0 0 0.75rem; font-size: 1.15rem; }
+    .panel p { margin: 0 0 1rem; color: rgba(244, 239, 228, 0.82); font-size: 0.98rem; }
+    .statgrid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+    .stat {
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 0.85rem; padding: 0.85rem 0.9rem;
+    }
+    .stat strong {
+      display: block; font-family: ui-sans-serif, system-ui, sans-serif;
+      font-size: 1.35rem; color: var(--gold);
+    }
+    .stat span { font-size: 0.82rem; color: rgba(244,239,228,0.7); }
+    .notice {
+      margin: 0 0 2rem; padding: 0.9rem 1rem; border-radius: 0.75rem;
+      background: #fff7e8; border: 1px solid #efd7a5; font-family: ui-sans-serif, system-ui, sans-serif;
+      font-size: 0.9rem; color: #5b4630;
+    }
+    section { padding: 0.5rem 0 3rem; }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    @media (max-width: 820px) { .cards { grid-template-columns: 1fr; } }
+    .card {
+      background: #fffdf8; border: 1px solid var(--line); border-radius: 1rem; padding: 1.2rem;
+    }
+    .card h3 { margin: 0 0 0.5rem; font-size: 1.1rem; }
+    .card p { margin: 0; color: #475569; font-size: 0.98rem; }
+    footer {
+      border-top: 1px solid var(--line); padding: 1.5rem 0 2.5rem;
+      font-family: ui-sans-serif, system-ui, sans-serif; font-size: 0.85rem; color: var(--muted);
+    }
+    footer .row { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+  </style>
 </head>
 <body>
-<p>Redirecting to <a href="/austlii/index.html">/austlii/index.html</a>…</p>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="/">Case<span>Outcomes</span>.au</a>
+      <nav aria-label="Primary">
+        <a href="/casestudy-probate.html">Case study</a>
+        <a href="https://github.com/christransformers/caseoutcomes.com.au">Source</a>
+      </nav>
+    </header>
+
+    <div class="notice" role="status">
+      Heads-up: this domain previously redirected into a mirrored AustLII browse path. That redirect is gone. This is the Case Outcomes Australia product surface again.
+    </div>
+
+    <section class="hero">
+      <div>
+        <div class="eyebrow">Open Australian Legal Corpus</div>
+        <h1>Outcomes you can actually search.</h1>
+        <p class="lede">Case Outcomes Australia is being built as a readable, filterable layer over open Australian judgements and tribunal decisions — for practitioners, researchers, and anyone who needs the holding without the haystack.</p>
+        <div class="actions">
+          <a class="btn primary" href="/casestudy-probate.html">Open the probate case study</a>
+          <a class="btn secondary" href="https://github.com/christransformers/caseoutcomes.com.au">View the Hugo build</a>
+        </div>
+      </div>
+      <aside class="panel" aria-label="Product snapshot">
+        <h2>What this is</h2>
+        <p>A product home for Australia’s open case outcomes work — not AustLII, not legal advice, and not a full corpus dump on the homepage.</p>
+        <div class="statgrid">
+          <div class="stat"><strong>Open</strong><span>CC BY corpus direction</span></div>
+          <div class="stat"><strong>AU</strong><span>Federal & state courts</span></div>
+          <div class="stat"><strong>Search</strong><span>Holdings & outcomes first</span></div>
+          <div class="stat"><strong>Static</strong><span>GitHub Pages today</span></div>
+        </div>
+      </aside>
+    </section>
+
+    <section>
+      <div class="cards">
+        <article class="card">
+          <h3>Outcome-first reading</h3>
+          <p>Surface the disposition, sentence band, or damages outcome before the hundred-page PDF.</p>
+        </article>
+        <article class="card">
+          <h3>Jurisdiction filters</h3>
+          <p>Browse by court and matter type instead of hoping a full-text keyword hits the right paragraph.</p>
+        </article>
+        <article class="card">
+          <h3>Built in the open</h3>
+          <p>Static hosting, transparent licensing, and a path to a proper search index when the corpus layer is ready.</p>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <div class="row">
+        <div>
+          <strong>Case Outcomes Australia</strong><br>
+          Information on this site is general information and is not legal advice.
+        </div>
+        <div>
+          <a href="/casestudy-probate.html">Probate case study</a> ·
+          <a href="https://github.com/christransformers/case-outcomes">This Pages repo</a>
+        </div>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
